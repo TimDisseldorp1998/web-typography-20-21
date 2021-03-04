@@ -1,3 +1,7 @@
+body {
+  background-color: #111111; 
+}
+
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -9,6 +13,8 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+    text-align: center;
+    width: 90%;
 }
 #closed-captions .on {
 	opacity: 1;
@@ -19,6 +25,21 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-style: italic;
+    font-size: 1.2em; 
+    color: white;
+}
+
+.voice2 {
+    color: yellow;
+    font-family: "brenner regular";
+    font-size: 1.2em;
+}
+
+.voice3 {
+    color: red;
+    text-transform: uppercase; 
+    font-size: 2em;
+    font-weight: bold;
 }
 
 /* **********************************************
@@ -104,13 +125,44 @@ Sounds.
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 .sound1 {
-	background: green;
+	background-color: red;
+}
+
+.sound2 {
+    background-color: grey;
+}
+
+.sound3 {
+    background-color: red;
+}
+
+.sound4 {
+    background-color: grey;
 }
 
 iframe {
 	transition: 1s;
+    margin-left: 360px;
+    margin-top: 200px;
 }
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1 iframe {
-	transform: rotate(1turn);
+.sound1, .sound3 iframe {
+	animation: bounce 1s linear;
 }
+
+@keyframes bounce {
+    20%,50%,80%, to
+    {
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-110px);
+    }
+    70%{
+        transform: translateY(-45px);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+}
+
