@@ -14,7 +14,7 @@ Feel free to adjust the defaults to your needs.
 	transition: .05s;
 	position: absolute;
     text-align: center;
-    width: 90%;
+    width: 98%;
 }
 #closed-captions .on {
 	opacity: 1;
@@ -24,22 +24,29 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
-    font-size: 1.2em; 
+	font-style: "brenner mono";
+    font-size: 1.5em; 
     color: white;
 }
 
 .voice2 {
+    font-family: "brenner sans";
+    font-size: 1.5em;
     color: yellow;
-    font-family: "brenner regular";
-    font-size: 1.2em;
 }
 
 .voice3 {
-    color: red;
+    font-family: "brenner sans condensed"
     text-transform: uppercase; 
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: bold;
+    color: red;
+}
+
+.voice4 {
+    font-family: "brenner sans";
+    font-size: 1.5em;
+    color: white;
 }
 
 /* **********************************************
@@ -133,20 +140,20 @@ Sounds.
 }
 
 .sound3 {
-    background-color: red;
+    background-color: #111111;
 }
 
 .sound4 {
-    background-color: grey;
+    background-color: #111111;
 }
 
 iframe {
 	transition: 1s;
-    margin-left: 360px;
+    margin-left: 400px;
     margin-top: 200px;
 }
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1, .sound3 iframe {
+.sound1, sound3 iframe {
 	animation: bounce 1s linear;
 }
 
@@ -163,6 +170,30 @@ iframe {
     }
     90%{
         transform: translateY(-10px);
+    }
+}
+
+.sound4 iframe {
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+    20%,50%,80%, to
+    {
+        transform: translateY(0);
+        background-color: red;
+    }
+    30%{
+        transform: translateY(-60px);
+        background-color: yellow;
+    }
+    65%{
+        transform: translateY(-45px);
+        background-color: blue;
+    }
+    85%{
+        transform: translateY(-8px);
+        background-color: purple;
     }
 }
 
