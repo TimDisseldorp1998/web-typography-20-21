@@ -131,9 +131,6 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-	background-color: red;
-}
 
 .sound2 {
     background-color: grey;
@@ -147,53 +144,177 @@ Sounds.
     background-color: #111111;
 }
 
+.sound5 {
+    background-color: #111111;
+}
+
 iframe {
 	transition: 1s;
     margin-left: 400px;
     margin-top: 200px;
 }
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1, sound3 iframe {
-	animation: bounce 1s linear;
-}
 
-@keyframes bounce {
-    20%,50%,80%, to
-    {
-        transform: translateY(0);
-    }
-    40%{
-        transform: translateY(-110px);
-    }
-    70%{
-        transform: translateY(-45px);
-    }
-    90%{
-        transform: translateY(-10px);
-    }
-}
-
-.sound4 iframe {
+.sound1 iframe {
     animation: bounce 1s linear;
 }
 
 @keyframes bounce {
     20%,50%,80%, to
     {
-        transform: translateY(0);
-        background-color: red;
+       transform: translateY(0);
     }
     30%{
-        transform: translateY(-60px);
-        background-color: yellow;
+        transform: translateY(-110px);
     }
     65%{
         transform: translateY(-45px);
-        background-color: blue;
     }
     85%{
-        transform: translateY(-8px);
-        background-color: purple;
+        transform: translateY(-10px);
     }
 }
 
+.sound1 {
+    animation: colorChange 1s linear;
+}
+
+@keyframes colorChange {
+    10%
+    {
+       background-color: red;
+    }
+    25%{
+       background-color: darkred;
+    }
+    40%{
+        background-color: red;
+    }
+    55%{
+        background-color: darkred;
+    }
+    70%{
+        background-color: red;
+    }
+    90%{
+        background-color: red;
+    }
+} 
+
+.sound2 iframe {
+    animation: skew 1s linear;
+}
+
+@keyframes skew {
+    20%
+    {
+        transform: skewY(20deg);
+    }
+    40%
+    {
+        transform: skewY(-10deg);
+    }
+}
+
+.sound2 {
+    animation: colorChange2 1s linear;
+}
+
+@keyframes colorChange2 {
+    10%
+    {
+        background-color: dimgray;
+    }
+    45%{
+        background-color: lightgray;
+    }
+    90%{
+        background-color: dimgray;
+    }
+}
+
+.sound4 iframe {
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+    20%,50%,80%, to
+    {
+       transform: translateX(0);
+    }
+    40%{
+        transform: translateX(-110px);
+    }
+    55%{
+        transform: translateX(-55px);
+    }
+    70%{
+        transform: translateX(-75px);
+    }
+    90%{
+        transform: translateX(-10px);
+    }
+}
+
+.sound6 iframe {
+    animation: shake-2 0.5s linear;
+}
+
+@keyframes shake-2 {
+    20%,50%,80%, to
+    {
+       transform: translateX(0);
+    }
+    40%{
+        transform: translateX(-110px);
+    }
+    55%{
+        transform: translateX(-55px);
+    }
+    70%{
+        transform: translateX(-75px);
+    }
+    90%{
+        transform: translateX(-10px);
+    }
+}
+
+.sound8 iframe {
+    animation: shake-3 0.5s linear;
+}
+
+@keyframes shake-3 {
+    20%,50%,80%, to
+    {
+       transform: translateX(0);
+    }
+    40%{
+        transform: translateX(-110px);
+    }
+    55%{
+        transform: translateX(-55px);
+    }
+    70%{
+        transform: translateX(-75px);
+    }
+    90%{
+        transform: translateX(-10px);
+    }
+}
+
+/*
+Nieuw idee:
+
+.sound8 iframe {
+    animation: scale 1s linear;
+}
+
+@keyframes scale {
+    20%
+    {
+        transform: scaleY(1.5);
+    }
+    40%
+    {
+        transform: scaleY(2);
+    }
+}
