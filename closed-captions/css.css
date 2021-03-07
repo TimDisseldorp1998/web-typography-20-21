@@ -301,6 +301,33 @@ iframe {
     }
 }
 
+.sound9 {
+    animation: grow 48s linear;
+}
+
+@keyframes grow {
+    90%
+    {
+        transform: scale(0);
+    }
+    70% 
+    {
+        transform: scale(100px);
+    }
+    50%
+    {
+        transform: scale(250px);
+    }
+    25%
+    {
+        transform: scale(400px);
+    }
+    10%
+    {
+        transform: scale(500px);
+}
+
+
 /*
 Nieuw idee:
 
