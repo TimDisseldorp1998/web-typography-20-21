@@ -301,32 +301,20 @@ iframe {
     }
 }
 
-.sound9 {
-    animation: grow 48s linear;
+.sound9 iframe {
+    animation: grow 42s linear;
 }
 
 @keyframes grow {
-    90%
+    0%
     {
-        transform: scale(0);
+        transform: scale(1);
     }
-    70% 
+    100%
     {
-        transform: scale(100px);
+        transform: scale(0.2);
     }
-    50%
-    {
-        transform: scale(250px);
-    }
-    25%
-    {
-        transform: scale(400px);
-    }
-    10%
-    {
-        transform: scale(500px);
 }
-
 
 /*
 Nieuw idee:
