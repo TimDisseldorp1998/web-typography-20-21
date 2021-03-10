@@ -1,5 +1,5 @@
 body {
-  background-color: #111111; 
+    background-color: #111111;
 }
 
 /* **********************************************
@@ -10,42 +10,74 @@ Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
 #closed-captions p {
-	opacity: 0;
-	transition: .05s;
-	position: absolute;
+    opacity: 0;
+    transition: .05s;
+    position: absolute;
     text-align: center;
     width: 98%;
 }
+
 #closed-captions .on {
-	opacity: 1;
+    opacity: 1;
 }
+
 #closed-captions .off {
-	transition: .2s;
-	opacity: 0;
+    transition: .2s;
+    opacity: 0;
 }
+
+.voice1::before {
+    content: "Computer: ";
+    font-style: "brenner mono";
+    color: #BFBFBF;
+    font-weight: medium;
+}
+
 .voice1 {
-	font-style: "brenner mono";
-    font-size: 1.5em; 
+    font-family: "brenner sans";
+    font-style: italic;
+    font-size: 1.2em;
     color: white;
+}
+
+.voice2::before {
+    content: "Officer KD6-3.7.: ";
+    font-family: "brenner sans";
+    color: #FFEA7A;
+    font-weight: medium;
 }
 
 .voice2 {
     font-family: "brenner sans";
-    font-size: 1.5em;
-    color: yellow;
+    font-style: italic;
+    font-size: 1.2em;
+    color: white;
+}
+
+.voice3::before {
+    content: "An other officer: ";
+    font-family: "brenner serif";
+    color: #F25944;
+    font-weight: medium;
 }
 
 .voice3 {
-    font-family: "brenner sans condensed"
-    text-transform: uppercase; 
-    font-size: 2.2em;
-    font-weight: bold;
-    color: red;
+    font-family: "brenner serif";
+    font-size: 1.1em;
+    color: white;
+}
+
+.voice4::before {
+    content: "Random person: ";
+    font-family: "brenner sans";
+    color: #3283CD;
+    font-weight: medium;
 }
 
 .voice4 {
     font-family: "brenner sans";
-    font-size: 1.5em;
+    font-style: italic;
+    font-size: 1.2em;
     color: white;
 }
 
@@ -58,69 +90,80 @@ The first paragraph, with extended timing for
 You probably want to change the styling.
 ********************************************** */
 .p0 span {
-	opacity: 0;
-	font-family: "brenner mono light";
+    opacity: 0;
+    font-family: "brenner mono light";
 }
+
 .p0.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-weight: 200;
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
 }
+
 .p0.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0s .4s;
-	margin-right: -.25em;
-	font-weight: 200;
+    opacity: 1;
+    transition: 0s .4s;
+    margin-right: -.25em;
+    font-weight: 200;
 }
+
 .p0.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0s .5s;
-	margin-right: -.25em;
-	font-weight: 200;
+    opacity: 1;
+    transition: 0s .5s;
+    margin-right: -.25em;
+    font-weight: 200;
 }
+
 .p0.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0s .7s;
-	margin-right: -.25em;
-	font-weight: 200;
+    opacity: 1;
+    transition: 0s .7s;
+    margin-right: -.25em;
+    font-weight: 200;
 }
+
 .p0.on span:nth-of-type(5) {
-	opacity: 1;
-	transition: 0s 1.1s;
-	margin-right: -.25em;
-	font-family: "brenner mono light";
+    opacity: 1;
+    transition: 0s 1.1s;
+    margin-right: -.25em;
+    font-family: "brenner mono light";
 }
+
 .p0.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0s 1.4s;
-	margin-right: -.25em;
-	font-family: "brenner mono light";
+    opacity: 1;
+    transition: 0s 1.4s;
+    margin-right: -.25em;
+    font-family: "brenner mono light";
 }
+
 .p0.on span:nth-of-type(7) {
-	opacity: 1;
-	transition: 0s 1.7s;
-	margin-right: -.25em;
-	font-family: "brenner mono light";
+    opacity: 1;
+    transition: 0s 1.7s;
+    margin-right: -.25em;
+    font-family: "brenner mono light";
 }
+
 .p0.on span:nth-of-type(8) {
-	opacity: 1;
-	transition: 0s 2s;
-	font-family: "brenner mono light";
+    opacity: 1;
+    transition: 0s 2s;
+    font-family: "brenner mono light";
 }
+
 .p0.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0s 3s;
-	font-family: "brenner mono light";
+    opacity: 1;
+    transition: 0s 3s;
+    font-family: "brenner mono light";
 }
+
 .p0.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0s 3.2s;
-	font-family: "brenner mono light";
+    opacity: 1;
+    transition: 0s 3.2s;
+    font-family: "brenner mono light";
 }
+
 .p0.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s 3.7s;
-	font-family: "brenner mono light";
+    opacity: 1;
+    transition: 0s 3.7s;
+    font-family: "brenner mono light";
 }
 
 /* **********************************************
@@ -149,7 +192,7 @@ Sounds.
 }
 
 iframe {
-	transition: 1s;
+    transition: 1s;
     margin-left: 400px;
     margin-top: 200px;
 }
@@ -159,17 +202,23 @@ iframe {
 }
 
 @keyframes bounce {
-    20%,50%,80%, to
-    {
-       transform: translateY(0);
+
+    20%,
+    50%,
+    80%,
+    to {
+        transform: translateY(0);
     }
-    30%{
+
+    30% {
         transform: translateY(-110px);
     }
-    65%{
+
+    65% {
         transform: translateY(-45px);
     }
-    85%{
+
+    85% {
         transform: translateY(-10px);
     }
 }
@@ -179,38 +228,41 @@ iframe {
 }
 
 @keyframes colorChange {
-    10%
-    {
-       background-color: red;
-    }
-    25%{
-       background-color: darkred;
-    }
-    40%{
+    10% {
         background-color: red;
     }
-    55%{
+
+    25% {
         background-color: darkred;
     }
-    70%{
+
+    40% {
         background-color: red;
     }
-    90%{
+
+    55% {
+        background-color: darkred;
+    }
+
+    70% {
         background-color: red;
     }
-} 
+
+    90% {
+        background-color: red;
+    }
+}
 
 .sound2 iframe {
     animation: skew 1s linear;
 }
 
 @keyframes skew {
-    20%
-    {
+    20% {
         transform: skewY(20deg);
     }
-    40%
-    {
+
+    40% {
         transform: skewY(-10deg);
     }
 }
@@ -220,14 +272,15 @@ iframe {
 }
 
 @keyframes colorChange2 {
-    10%
-    {
+    10% {
         background-color: dimgray;
     }
-    45%{
+
+    45% {
         background-color: lightgray;
     }
-    90%{
+
+    90% {
         background-color: dimgray;
     }
 }
@@ -237,20 +290,27 @@ iframe {
 }
 
 @keyframes shake {
-    20%,50%,80%, to
-    {
-       transform: translateX(0);
+
+    20%,
+    50%,
+    80%,
+    to {
+        transform: translateX(0);
     }
-    40%{
+
+    40% {
         transform: translateX(-110px);
     }
-    55%{
+
+    55% {
         transform: translateX(-55px);
     }
-    70%{
+
+    70% {
         transform: translateX(-75px);
     }
-    90%{
+
+    90% {
         transform: translateX(-10px);
     }
 }
@@ -260,20 +320,27 @@ iframe {
 }
 
 @keyframes shake-2 {
-    20%,50%,80%, to
-    {
-       transform: translateX(0);
+
+    20%,
+    50%,
+    80%,
+    to {
+        transform: translateX(0);
     }
-    40%{
+
+    40% {
         transform: translateX(-110px);
     }
-    55%{
+
+    55% {
         transform: translateX(-55px);
     }
-    70%{
+
+    70% {
         transform: translateX(-75px);
     }
-    90%{
+
+    90% {
         transform: translateX(-10px);
     }
 }
@@ -283,20 +350,27 @@ iframe {
 }
 
 @keyframes shake-3 {
-    20%,50%,80%, to
-    {
-       transform: translateX(0);
+
+    20%,
+    50%,
+    80%,
+    to {
+        transform: translateX(0);
     }
-    40%{
+
+    40% {
         transform: translateX(-110px);
     }
-    55%{
+
+    55% {
         transform: translateX(-55px);
     }
-    70%{
+
+    70% {
         transform: translateX(-75px);
     }
-    90%{
+
+    90% {
         transform: translateX(-10px);
     }
 }
@@ -306,14 +380,219 @@ iframe {
 }
 
 @keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    5% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+.sound9 .rondje {
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #265431;
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    animation: rond 42s linear;
+    border: #A6C5AD;
+}
+
+@keyframes rond {
+    0% {
+        opacity: 0;
+        transform: scale(30);
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(40);
+        background-color: #3B7B49;
+    }
+
+    30% {
+        opacity: 0;
+        transform: scale(50);
+    }
+
+    40% {
+        opacity: 0.5;
+        transform: scale(60);
+        background-color: #3B7B49;
+    }
+
+    50% {
+        opacity: 0.75;
+        transform: scale(70);
+        background-color: #3B7B49;
+    }
+    
+    60% {
+        opacity: 0;
+        transform: scale(70);
+    }
+
+    70% {
+        opacity: 0.5;
+        transform: scale(80);
+        background-color: #3B7B49;
+    }
+
+    80% {
+        opacity: 0.75;
+        transform: scale(90);
+        background-color: #255E32;
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(95);
+        background-color: #153C1E;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(100);
+        background-color: #111111;
+    }
+}
+
+/* 
+Rondje gaat van Groot -> Klein
+@keyframes rond {
     0%
     {
-        transform: scale(1);
+        opacity: 0.20;
+        transform: scale(100);
+        background-color: #2B6C3A;
+    }
+    10%
+    {
+        opacity: 0;
+        transform: scale(90);
+    }
+    20%
+    {
+        opacity: 0.40;
+        transform: scale(80);
+        background-color: #3B7B49;
+    }
+    30%
+    {
+        opacity: 0;
+        transform: scale(70);
+    }
+    40%
+    {
+        opacity: 0.60;
+        transform: scale(60);
+        background-color: #51905F;
+    }
+    50%
+    {
+        opacity: 0;
+        transform: scale(55);
+    }
+    60%
+    {
+        opacity: 0.80;
+        transform: scale(50);
+        background-color: #76AE83;
+    }
+    70%
+    {
+        opacity: 0;
+        transform: scale(45);
+    }
+    80%
+    {
+        opacity: 1;
+        transform: scale(40);
+        background-color: #ADD8B7;
     }
     100%
     {
-        transform: scale(0.3);
+        opacity: 0;
+        transform: scale(0);
     }
+}
+
+/*
+@keyframes rond {
+    0%
+    {
+        opacity: 0.25;
+        transform: scale(0);
+        background-color: #111111;
+    }
+    15%
+    {
+        opacity: 0.5;
+        transform: scale(20);
+        background-color: purple;
+    }
+    30%
+    {
+        opacity: 0.75;
+        transform: scale(40);
+        background-color: blue;
+    }
+    45%
+    {
+        opacity: 1;
+        transform: scale(60);
+        background-color: green;
+    }
+    60%
+    {
+        opacity: 1.25;
+        transform: scale(80);
+        background-color: yellow;
+    }
+    75%
+    {
+        opacity: 1.5;
+        transform: scale(100);
+        background-color: orange;
+    }
+    90%
+    {
+        opacity: 2;
+        transform: scale(120);
+        background-color: red;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: scale(150);
+        background-color: red;
+    }
+}
+
+.rondje {    
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 40s;
+    border: darkblue;
+}
+
+.sound9 .rondje {
+    opacity: 1;
+    transform: scale(120);
 }
 
 /*
