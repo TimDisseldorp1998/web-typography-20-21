@@ -14,7 +14,7 @@ Feel free to adjust the defaults to your needs.
     transition: .05s;
     position: absolute;
     text-align: center;
-    width: 98%;
+    width: 99%;
 }
 
 #closed-captions .on {
@@ -29,55 +29,56 @@ Feel free to adjust the defaults to your needs.
 .voice1::before {
     content: "Computer: ";
     font-style: "brenner mono";
-    color: #7FAFBA;
-    font-weight: medium;
+    color: lightskyblue;
+    font-weight: bold;
 }
 
 .voice1 {
-    font-family: "brenner sans";
+    font-family: "brenner mono";
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: white;
 }
 
 .voice2::before {
     content: "Officer KD6-3.7.: ";
     font-family: "brenner sans";
-    color: #FFEA7A;
-    font-weight: medium;
+    color: lightyellow;
+    font-weight: bold;
 }
 
 .voice2 {
     font-family: "brenner sans";
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: white;
 }
 
 .voice3::before {
+    font-family: "brenner condensed";
     content: "An other officer: ";
-    font-family: "brenner serif";
     color: #F25944;
-    font-weight: medium;
+    font-weight: bold;
 }
 
 .voice3 {
-    font-family: "brenner serif";
-    font-size: 1.1em;
+    font-family: "brenner condensed";
+    font-size: 1.2em;
+    font-variant: small-caps;
     color: white;
 }
 
 .voice4::before {
     content: "Random person: ";
     font-family: "brenner sans";
-    color: #3283CD;
-    font-weight: medium;
+    color: green;
+    font-weight: bold;
 }
 
 .voice4 {
     font-family: "brenner sans";
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: white;
 }
 
@@ -183,18 +184,10 @@ Sounds.
     background-color: #111111;
 }
 
-.sound4 {
-    background-color: #111111;
-}
-
-.sound5 {
-    background-color: #111111;
-}
-
 iframe {
     transition: 1s;
-    margin-left: 400px;
-    margin-top: 200px;
+    margin-left: 646px;
+    margin-top: 300px;
 }
 
 .sound1 iframe {
@@ -253,6 +246,23 @@ iframe {
     }
 }
 
+.geluid1 {
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    left: 46.5%;
+    bottom: 20%;
+    opacity: 0;
+    }
+
+.sound1 .geluid1{
+opacity: 1;
+}
+
+.sound2 .geluid1{
+opacity: 0;
+}
+
 .sound2 iframe {
     animation: skew 1s linear;
 }
@@ -285,6 +295,23 @@ iframe {
     }
 }
 
+.geluid2 {
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    left: 46.5%;
+    bottom: 20%;
+    opacity: 0;
+}
+
+.sound2 .geluid2{
+opacity: 1;
+    
+}
+.sound3 .geluid2{
+opacity: 0;
+}
+
 .sound4 iframe {
     animation: shake 0.5s linear;
 }
@@ -313,6 +340,23 @@ iframe {
     90% {
         transform: translateX(-10px);
     }
+}
+
+.geluid3 {
+    opacity: 0;
+    position: absolute;
+    left: 46.5%;
+    bottom: 20%;
+    color: white;
+    font-size: 1.2em;
+    }
+
+.sound4 .geluid3{
+    opacity: 1;
+}
+
+.sound5 .geluid3{
+    opacity: 0;
 }
 
 .sound6 iframe {
@@ -349,6 +393,23 @@ iframe {
     animation: shake-3 0.5s linear;
 }
 
+.geluid4 {
+    opacity: 0;
+    position: absolute;
+    left: 46.5%;
+    bottom: 20%;
+    color: white;
+    font-size: 1.2em;
+}
+
+.sound6 .geluid4{
+    opacity: 1;
+}
+
+.sound7 .geluid4{
+    opacity: 0;
+}
+
 @keyframes shake-3 {
 
     20%,
@@ -374,6 +435,59 @@ iframe {
         transform: translateX(-10px);
     }
 }
+
+.sound9 iframe {
+    animation: grow 42s linear;
+}
+
+.geluid5 {
+    opacity: 0;
+    position: absolute;
+    left: 46.5%;
+    bottom: 20%;
+    color: white;
+    font-size: 1.2em;
+    }
+
+.sound8 .geluid5{
+    opacity: 1;
+    }
+
+.sound9 .geluid5{
+    opacity: 0;
+    }
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    5% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+.geluid6 {
+    opacity: 0;
+    position: absolute;
+    left: 46.5%;
+    bottom: 20%;
+    color: white;
+    font-size: 1.2em;
+    }
+
+.sound9 .geluid6{
+    opacity: 1;
+    }
+
+.sound10 .geluid6{
+    opacity: 0;
+    color: #111111;
+    }
 
 .sound9 iframe {
     animation: grow 42s linear;
@@ -411,13 +525,13 @@ iframe {
         opacity: 0;
         transform: scale(30);
     }
-    
+
     20% {
         opacity: 0.25;
         transform: scale(40);
         background-color: #3B7B49;
     }
-    
+
 }
 
 @keyframes rond {
@@ -427,7 +541,7 @@ iframe {
         background-color: #7BFFB0;
     }
 
-    30% {
+    20% {
         opacity: 0.25;
         transform: scale(40);
         background-color: #7BFFB0;
@@ -438,35 +552,35 @@ iframe {
         transform: scale(50);
         background-color: #FFF388;
     }
-    
+
     50% {
-        opacity: 0.75;
+        opacity: 1;
         transform: scale(60);
         background-color: #FFE713;
     }
-    
+
     60% {
-        opacity: 1;
+        opacity: 2;
         transform: scale(70);
         background-color: #FFF388;
     }
-    
+
     70% {
-        opacity: 1.5;
-        transform: scale(80);
-        background-color: #FF986B;
-    }
-    
-    80% {
-        opacity: 2;
+        opacity: 3;
         transform: scale(90);
-        background-color: #EE4D37;
+        background-color: darkorange;
+    }
+
+    80% {
+        opacity: 4;
+        transform: scale(110);
+        background-color: #F2270B;
     }
 
     100% {
-        opacity: 2;
-        transform: scale(120);
-        background-color: #F2270B;
+        opacity: 5;
+        transform: scale(130);
+        background-color: darkred;
     }
 }
 
@@ -478,21 +592,21 @@ iframe {
     0% {
         transform: scale(1);
     }
-    
+
     75% {
         transform: scale(1);
     }
-    
+
     80% {
         transform: scale(0.8);
     }
-    
+
     85% {
         transform: scale(0.85);
     }
-    
+
     100% {
-        transform: scale(1.1);
+        transform: scale(1.15);
     }
 }
 
@@ -514,245 +628,76 @@ iframe {
         opacity: 0;
         transform: scale(30);
     }
-    
+
     20% {
         opacity: 0;
         transform: scale(40);
     }
-    
+
 }
 
 @keyframes cirkel {
     0% {
         opacity: 0;
-        transform: scale(110);
+        transform: scale(20);
     }
-    
-    1% {
-        opacity: 1;
-        transform: scale(105);
-        background-color: #4C4C68;
+
+    10% {
+        opacity: 0.25;
+        transform: scale(50);
+        background-color: dimgray;
     }
     
     20% {
-        opacity: 1;
-        transform: scale(95);
-        background-color: #6B6B97;
-    }
-    
-    25% {
         opacity: 0;
-        transform: scale(100);
+        transform: scale(20);
     }
     
     30% {
-        opacity: 1;
-        transform: scale(92);
-        background-color: #CD65D6;
-    }
-    
-    40% {
-        opacity: 1;
-        transform: scale(87);
-        background-color: #6B4E6B;
-    }
-    
-    43% {
-        opacity: 0;
-        transform: scale(100);
-    }
-    
-    48% {
-        opacity: 1;
-        transform: scale(85);
-        background-color: #A63425;
-    }
-    
-    58% {
-        opacity: 1;
+        opacity: 0.5;
         transform: scale(80);
-        background-color: #76190C;
-    }
-    
-    60% {
-        opacity: 0;
-        transform: scale(110);
-    }
-    
-    65% {
-        opacity: 1;
-        transform: scale(82);
-        background-color: #404040;
-    }
-    
-    75% {
-        opacity: 1;
-        transform: scale(72);
-        background-color: #2D2D2D;
-    }
-    
-    80% {
-        opacity: 0;
-        transform: scale(0);
-    }
-    
-    81% {
-        opacity: 0;
-        transform: scale(25);
-        background-color: #2D2D2D;
-    }
-    
-    100% {
-        opacity: 1;
-        transform: scale(105);
-        background-color: #111111;
-    }
-}
-
-
-/*
-Nieuw idee:
-
-.sound8 iframe {
-    animation: scale 1s linear;
-}
-
-@keyframes scale {
-    20%
-    {
-        transform: scaleY(1.5);
-    }
-    40%
-    {
-        transform: scaleY(2);
-    }
-}
-
-------
-
-30% {
-        opacity: 1;
-        transform: scale(90);
-        background-color: #7F8120;
-    }
-    
-    33% {
-        opacity: 1;
-        transform: scale(90);
-        background-color: #7F8120;
-    }
-
-    35% {
-        opacity: 0;
-        transform: scale(120);
-    }
-    
-    36% {
-        opacity: 0;
-        transform: scale(110);
+        background-color: dimgray;
     }
     
     40% {
-        opacity: 1;
-        transform: scale(90);
-        background-color: #4C4C68;
-    }
-    
-    43% {
-        opacity: 1;
-        transform: scale(90);
-        background-color: #4C4C68;
-    }
-    
-    45% {
         opacity: 0;
-        transform: scale(120);
-    }
-    
-    46% {
-        opacity: 0;
-        transform: scale(110);
+        transform: scale(20);
     }
     
     50% {
         opacity: 1;
-        transform: scale(70);
-        background-color: #4C6852;
-    }
-    
-    53% {
-        opacity: 1;
-        transform: scale(70);
-        background-color: #4C6852;
-    }
-    
-    51% {
-        opacity: 0;
         transform: scale(120);
-    }
-    
-    52% {
-        opacity: 0;
-        transform: scale(110);
-    }
-    
-    60% {
-        opacity: 0;
-        transform: scale(90);
-        background-color: #6B4E6B;
-    }
-    
-    63% {
-        opacity: 0;
-        transform: scale(90);
-        background-color: #6B4E6B;
-    }
-    
-    65% {
-        opacity: 0;
-        transform: scale(120);
-    }
-    
-    66% {
-        opacity: 0;
-        transform: scale(110);
+        background-color: dimgray;
     }
     
     70% {
-        opacity: 1;
-        transform: scale(80);
-        background-color: #852727;
-    }
-    
-    73% {
-        opacity: 1;
-        transform: scale(80);
-        background-color: #852727;
-    }
-    
-    71% {
         opacity: 0;
-        transform: scale(120);
+        transform: scale(20);
     }
-    
-    72% {
-        opacity: 0;
-        transform: scale(110);
-    }
-    
-    80% {
+   
+
+    100% {
         opacity: 1;
-        transform: scale(70);
-        background-color: #32655F;
-    }
-    
-    84% {
-        opacity: 1;
-        transform: scale(70);
-        background-color: #32655F;
-    }
-    
-    90% {
-        opacity: 0;
         transform: scale(140);
+        background-color: #111111;
     }
+}
+
+.geluid7 {
+    opacity: 0;
+    position: absolute;
+    left: 46.5%;
+    bottom: 20%;
+    color: white;
+    font-size: 1.2em;
+    }
+
+.sound10 .geluid7{
+    opacity: 1;
+    }
+
+.sound11 .geluid7{
+    opacity: 0;
+    }
+
+
