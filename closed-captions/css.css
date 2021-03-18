@@ -543,25 +543,25 @@ opacity: 0;
 
     20% {
         opacity: 0.25;
-        transform: scale(30);
+        transform: scale(40);
         background-color: #7BFFB0;
     }
 
     40% {
         opacity: 0.5;
-        transform: scale(40);
+        transform: scale(50);
         background-color: #FFF388;
     }
 
     50% {
         opacity: 1;
-        transform: scale(50);
+        transform: scale(60);
         background-color: #FFE713;
     }
 
     60% {
         opacity: 2;
-        transform: scale(60);
+        transform: scale(70);
         background-color: #FFF388;
     }
 
@@ -573,13 +573,13 @@ opacity: 0;
 
     80% {
         opacity: 4;
-        transform: scale(100);
+        transform: scale(105);
         background-color: #F2270B;
     }
 
     100% {
         opacity: 5;
-        transform: scale(120);
+        transform: scale(110);
         background-color: darkred;
     }
 }
@@ -677,7 +677,7 @@ opacity: 0;
    
 
     100% {
-        opacity: 1;
+        opacity: 2;
         transform: scale(120);
         background-color: #111111;
     }
